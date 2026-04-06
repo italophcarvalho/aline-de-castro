@@ -1,0 +1,290 @@
+/* ============================================================
+   RESPONSIVE.CSS — Mobile-First Breakpoints
+   ============================================================ */
+
+/* ── MOBILE: ≤ 767px ── */
+@media (max-width: 767px) {
+
+  :root {
+    --navbar-height: 60px;
+    --space-xl: 4rem;
+    --space-2xl: 6rem;
+  }
+
+  /* Navbar */
+  .navbar__nav {
+    display: none;
+  }
+
+  .navbar__inner {
+    padding-inline: 1.5rem;
+  }
+
+  /* Hero */
+  .hero__content {
+    padding-inline: 1.5rem;
+    padding-bottom: 5rem;
+    max-width: 100%;
+  }
+
+  .hero__title-serif {
+    font-size: clamp(4rem, 18vw, 7rem);
+  }
+
+  .hero__title-sans {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+
+  .hero__cta-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .hero__scroll-hint {
+    display: none;
+  }
+
+  /* Features */
+  .features {
+    padding-block: 4rem;
+  }
+
+  .features__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .feature-card {
+    height: auto;
+    min-height: 340px;
+  }
+
+  /* Manifesto */
+  .manifesto {
+    padding-block: 5rem;
+  }
+
+  .manifesto__chef {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .chef-bio__image {
+    height: 320px;
+    order: -1;
+  }
+
+  /* Protocol stack */
+  .protocol__wrapper {
+    height: auto;
+  }
+
+  .protocol__sticky {
+    position: relative;
+    top: auto;
+    height: auto;
+    padding-block: 2rem;
+  }
+
+  .protocol__stack {
+    height: auto;
+  }
+
+  .protocol-card {
+    position: relative;
+    grid-template-columns: 1fr;
+    margin-bottom: 1.5rem;
+  }
+
+  .protocol-card__visual {
+    height: 200px;
+  }
+
+  .protocol-card__content {
+    padding: 2rem 1.5rem;
+  }
+
+  /* FAQ */
+  .faq__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .faq__item {
+    padding-inline: 0;
+  }
+
+  /* Form */
+  .form-section__inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .form__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .form__field--full {
+    grid-column: auto;
+  }
+
+  .budget-gate__options {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .budget-label {
+    justify-content: center;
+  }
+
+  /* Footer */
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .footer__legal {
+    justify-content: center;
+  }
+
+  /* Containers */
+  .container {
+    padding-inline: 1.5rem;
+  }
+
+  /* Section label */
+  .section-label {
+    font-size: 0.62rem;
+  }
+
+  /* Manifesto text */
+  .manifesto__text-bold {
+    font-size: 1.5rem;
+  }
+
+  .manifesto__text-common {
+    font-size: 1rem;
+  }
+
+  /* Protocol header */
+  .protocol__header {
+    padding-inline: 1.5rem;
+  }
+}
+
+/* ── TABLET: 768px – 1024px ── */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  :root {
+    --space-xl: 6rem;
+    --space-2xl: 9rem;
+  }
+
+  /* Features */
+  .features__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .features__grid .feature-card:last-child {
+    grid-column: 1 / -1;
+    height: 280px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  /* Manifesto chef */
+  .manifesto__chef {
+    gap: 4rem;
+  }
+
+  .chef-bio__image {
+    height: 380px;
+  }
+
+  /* Form */
+  .form-section__inner {
+    gap: 5rem;
+  }
+
+  /* Footer */
+  .footer__grid {
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+  }
+
+  .footer__grid > *:last-child {
+    grid-column: 1 / -1;
+  }
+
+  /* Protocol cards */
+  .protocol__stack {
+    max-width: 700px;
+  }
+
+  .protocol-card__quote {
+    font-size: 1.6rem;
+  }
+}
+
+/* ── DESKTOP: ≥ 1025px ── */
+@media (min-width: 1025px) {
+
+  /* Ensure navbar nav is always visible */
+  .navbar__nav {
+    display: flex;
+  }
+
+  /* Hero gets extra breathing room */
+  .hero__title-serif {
+    font-size: clamp(8rem, 12vw, 14rem);
+  }
+
+  /* Features full 3-column */
+  .features__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ── LARGE DESKTOP: ≥ 1440px ── */
+@media (min-width: 1440px) {
+
+  .hero__title-serif {
+    font-size: 14rem;
+  }
+
+  .protocol-card__quote {
+    font-size: 2.4rem;
+  }
+}
+
+/* ── REDUCED MOTION ── */
+@media (prefers-reduced-motion: reduce) {
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .hero__bg {
+    transition: none !important;
+  }
+
+  .btn--primary {
+    animation: none;
+  }
+
+  .status-dot {
+    animation: none;
+  }
+}

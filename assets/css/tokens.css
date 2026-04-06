@@ -1,0 +1,75 @@
+/* ============================================================
+   TOKENS.CSS — Design System: Aline de Castro Buffet
+   Preset Z: "The Gastronomic Gallery" — Le Cordon Bleu Standard
+   ============================================================ */
+
+:root {
+  /* ── COLOR SYSTEM ── */
+  --color-primary:       #f2ca50;   /* Metallic Gold */
+  --color-accent:        #d4af37;   /* Gold Container / Hover */
+  --color-background:    #131313;   /* Obsidian */
+  --color-dark:          #0e0e0e;   /* Deepest Void */
+  --color-surface:       #1f1f1f;   /* Surface tier 1 */
+  --color-surface-high:  #2a2a2a;   /* Surface tier 2 — elevated interactive */
+  --color-on-surface:    #e2e2e2;   /* Ice White */
+  --color-on-surface-dim:#9a9a9a;   /* Muted text */
+  --color-success:       #22c55e;   /* Status / operational */
+  --color-error:         #ef4444;   /* Error state */
+
+  /* Gold gradient — 135deg mimics polished brass */
+  --gradient-gold: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+
+  /* Ghost border — suggestion of container without breaking minimalism */
+  --ghost-border: rgba(242, 202, 80, 0.15);
+  --ghost-border-white: rgba(226, 226, 226, 0.08);
+
+  /* ── TYPOGRAPHY ── */
+  --font-title: 'Manrope', sans-serif;
+  --font-drama: 'Noto Serif', serif;
+  --font-data:  'Manrope', sans-serif;
+
+  /* ── SPACING SCALE ── */
+  --space-2xs: 0.25rem;   /*  4px */
+  --space-xs:  0.5rem;    /*  8px */
+  --space-sm:  1rem;      /* 16px */
+  --space-md:  2rem;      /* 32px */
+  --space-lg:  4rem;      /* 64px */
+  --space-xl:  8rem;      /* 128px */
+  --space-2xl: 12rem;     /* 192px */
+
+  /* ── BORDER RADIUS — ZERO (luxury/precision mandate) ── */
+  --radius-none: 0px;
+  --radius-sm:   0px;
+  --radius-md:   0px;
+  --radius-lg:   0px;
+  --radius-pill: 0px;
+
+  /* ── SHADOWS — deep black, never grey ── */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.6);
+
+  /* ── TRANSITIONS ── */
+  --ease-magnetic: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-spring:   cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth:   cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-luxury:   cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Durations matching DESIGN.md: 400–600ms, never bouncy */
+  --duration-fast:   0.25s;
+  --duration-base:   0.45s;
+  --duration-slow:   0.6s;
+
+  /* ── LAYOUT ── */
+  --container-max: 1280px;
+  --container-pad: clamp(1.5rem, 5vw, 5rem);
+  --navbar-height: 72px;
+
+  /* ── Z-INDEX SCALE ── */
+  --z-base:    1;
+  --z-card:    10;
+  --z-sticky:  50;
+  --z-navbar:  100;
+  --z-modal:   200;
+  --z-noise:   9999;
+}

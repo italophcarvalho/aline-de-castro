@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ── SEO ── -->
+  <title>Aline de Castro Buffet | Alta Gastronomia Le Cordon Bleu — Vila Velha, ES</title>
+  <meta name="description" content="Buffet de alta gastronomia com certificação Le Cordon Bleu SP. Casamentos, eventos corporativos e experiências gastronômicas premium em Vila Velha e Grande Vitória.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://alinedecastrobuffet.com.br/">
+  <meta property="og:title" content="Aline de Castro Buffet | Alta Gastronomia Le Cordon Bleu">
+  <meta property="og:description" content="Casamentos e eventos premium com o padrão Le Cordon Bleu SP. Vila Velha, ES.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=85">
+
+  <!-- ── PERFORMANCE HINTS ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+  <!-- ── GOOGLE FONTS ── -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- ── GSAP CDN ── -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+  <!-- ── CSS — Order matters: tokens first ── -->
+  <link rel="stylesheet" href="./assets/css/tokens.css">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/layout.css">
+  <link rel="stylesheet" href="./assets/css/components.css">
+  <link rel="stylesheet" href="./assets/css/animations.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════
+       A. NAVBAR — "A Ilha Flutuante"
+       ══════════════════════════════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Navegação principal">
+    <div class="navbar__inner">
+      <a href="#" class="navbar__logo" aria-label="Aline de Castro Buffet — página inicial">
+        Aline de Castro <span>Buffet</span>
+      </a>
+      <div class="navbar__nav">
+        <a href="#servicos" class="navbar__link">Serviços</a>
+        <a href="#sobre" class="navbar__link">A Chef</a>
+        <a href="#depoimentos" class="navbar__link">Depoimentos</a>
+        <a href="#faq" class="navbar__link">FAQ</a>
+        <a href="#agendar" class="btn btn--primary" style="margin-left:1rem;">
+          <span>Verificar Disponibilidade</span>
+          <span class="btn__arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════
+         B. HERO — "A Cena de Abertura"
+         ══════════════════════════════════════════ -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <!-- TODO: substituir por foto real de evento/prato da Chef Aline -->
+      <div class="hero__bg" role="img" aria-label="Prato gourmet empratado de alta gastronomia"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow" aria-label="Certificação">
+          Le Cordon Bleu SP — Certified
+        </p>
+
+        <h1>
+          <span class="hero__title-sans">
+            <span class="word">Excellence</span>
+            <span class="word"> in</span>
+          </span>
+          <span class="hero__title-serif">
+            <span class="word">Gastronomy.</span>
+          </span>
+        </h1>
+
+        <p class="hero__subtitle">The Le Cordon Bleu Standard</p>
+
+        <div class="hero__cta-group">
+          <a href="#agendar" class="btn btn--primary btn--lg">
+            <span>Verificar Disponibilidade de Data</span>
+            <span class="btn__arrow">→</span>
+          </a>
+          <a href="#servicos" class="btn btn--secondary">
+            Ver Serviços
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__scroll-hint" aria-hidden="true">Scroll</div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         C. FEATURES — "Artefatos Funcionais Interativos"
+         ══════════════════════════════════════════ -->
+    <section class="features" id="servicos" aria-label="Serviços">
+      <div class="container">
+        <div class="features__header">
+          <p class="section-label">Portfólio de Serviços</p>
+          <h2 style="font-family:var(--font-drama);font-style:italic;font-size:clamp(2rem,4vw,3.5rem);font-weight:700;color:var(--color-on-surface);line-height:1.1;">
+            Cada evento,<br>uma assinatura.
+          </h2>
+        </div>
+
+        <div class="features__grid">
+
+          <!-- CARD 1: Shuffle — Premium Weddings -->
+          <article class="feature-card" aria-label="Casamentos Premium">
+            <div>
+              <p class="feature-card__label">Serviço 01</p>
+              <h3 class="feature-card__title">Premium<br>Weddings</h3>
+            </div>
+            <div class="shuffle-stack" role="region" aria-label="Tipos de evento em rotação">
+              <div class="shuffle-item">
+                <div class="shuffle-item__icon">💍</div>
+                <div class="shuffle-item__name">Casamentos</div>
+                <div class="shuffle-item__desc">Ilhas gastronômicas e empratados de alto padrão para o dia mais especial.</div>
+              </div>
+              <div class="shuffle-item">
+                <div class="shuffle-item__icon">🏛️</div>
+                <div class="shuffle-item__name">Eventos Corporativos</div>
+                <div class="shuffle-item__desc">Gastronomia de gala para premiações, formaturas e experiências empresariais.</div>
+              </div>
+              <div class="shuffle-item">
+                <div class="shuffle-item__icon">🍻</div>
+                <div class="shuffle-item__name">Roda de Boteco Premium</div>
+                <div class="shuffle-item__desc">Comida de boteco com execução e roupagem de alta gastronomia.</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 2: Typewriter — Corporate Gala -->
+          <article class="feature-card" aria-label="Eventos Corporativos">
+            <div>
+              <p class="feature-card__label">Serviço 02</p>
+              <h3 class="feature-card__title">Corporate<br>Gala</h3>
+            </div>
+            <div class="typewriter-display" role="region" aria-label="Log de execução corporativa" aria-live="polite">
+              <span class="typewriter-text" id="typewriter-output"></span>
+              <span class="typewriter-cursor" aria-hidden="true"></span>
+            </div>
+          </article>
+
+          <!-- CARD 3: Scheduler — Menu Degustation -->
+          <article class="feature-card" aria-label="Mentoria e Degustação">
+            <div>
+              <p class="feature-card__label">Serviço 03</p>
+              <h3 class="feature-card__title">Menu<br>Degustation</h3>
+            </div>
+            <div class="scheduler-display" role="region" aria-label="Seleção de horário para menu degustação">
+              <div class="scheduler-header">
+                <span class="scheduler-day">Seg</span>
+                <span class="scheduler-day">Ter</span>
+                <span class="scheduler-day">Qua</span>
+                <span class="scheduler-day">Qui</span>
+                <span class="scheduler-day">Sex</span>
+                <span class="scheduler-day">Sáb</span>
+                <span class="scheduler-day">Dom</span>
+              </div>
+              <div class="scheduler-grid" style="position:relative;">
+                <!-- 7 cols × 4 rows = 28 cells -->
+                <div class="scheduler-cell"></div><div class="scheduler-cell"></div><div class="scheduler-cell"></div><div class="scheduler-cell"></div><div class="scheduler-cell"></div><div class="scheduler-cell"></div><div class="scheduler-cell"></div>
+                <div class="scheduler-cell"></div><div class="scheduler-cell"></div><div class="scheduler-cell"></div><div class="scheduler-cell"></div><div class="scheduler-cell"></div><div class="scheduler-cell"></div><div class="scheduler-cell"></div>
+                <div class="scheduler-cell"></div><div class="scheduler-cell"></div><div class="scheduler-cell"></div><div class="scheduler-cell"></div><div class="scheduler-cell"></div><div class="scheduler-cell"></div><div class="scheduler-cell"></div>
+                <div class="scheduler-cell"></div><div class="scheduler-cell"></div><div class="scheduler-cell"></div><div class="scheduler-cell"></div><div class="scheduler-cell"></div><div class="scheduler-cell"></div><div class="scheduler-cell"></div>
+                <!-- SVG cursor -->
+                <svg class="scheduler-cursor" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M4 1L16 10L10 11L8 17L4 1Z" fill="#f2ca50" stroke="#f2ca50" stroke-width="0.5"/>
+                </svg>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         D. MANIFESTO — "O Manifesto" + Chef Bio
+         ══════════════════════════════════════════ -->
+    <section class="manifesto" id="sobre" aria-label="Nossa filosofia e a Chef">
+      <!-- TODO: substituir por foto de textura real da cozinha / evento -->
+      <div class="manifesto__bg-texture" aria-hidden="true"></div>
+
+      <div class="container manifesto__content">
+        <p class="section-label">Nossa Filosofia</p>
+
+        <p class="manifesto__text-common">
+          A maioria dos buffets foca em: entregar comida em grande volume.
+        </p>
+
+        <p class="manifesto__text-bold">
+          Nós focamos em: <em class="accent">uma experiência artística, validada pelo padrão Le Cordon Bleu.</em>
+        </p>
+      </div>
+
+      <!-- Chef Bio -->
+      <div class="container">
+        <div class="manifesto__chef">
+          <div class="chef-bio">
+            <div class="chef-bio__credential">
+              ✦ Le Cordon Bleu — São Paulo
+            </div>
+            <h2 class="chef-bio__name">Chef Aline de Castro</h2>
+            <p class="chef-bio__text">
+              Com formação pela renomada escola gastronômica Le Cordon Bleu SP,
+              a Chef Aline de Castro eleva cada evento a uma experiência sensorial única.
+              Sua filosofia une rigor técnico à hospitalidade premium — cada prato
+              é uma assinatura, cada evento uma obra.
+            </p>
+            <p class="chef-bio__text" style="margin-top:1rem;">
+              De casamentos luxuosos a galas corporativas, a execução impecável é a promessa
+              que diferencia o Aline de Castro Buffet de qualquer alternativa no mercado capixaba.
+            </p>
+            <a href="#agendar" class="btn btn--primary" style="margin-top:2.5rem;display:inline-flex;">
+              Solicitar Proposta
+              <span class="btn__arrow">→</span>
+            </a>
+          </div>
+          <div class="chef-bio__image">
+            <!-- TODO: substituir por foto real da Chef Aline de Castro -->
+            <img
+              src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=800&q=85&auto=format&fit=crop"
+              alt="Chef em cozinha profissional preparando prato de alta gastronomia"
+              loading="lazy"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         E. PROTOCOL — "Arquivo Empilhável Sticky"
+         Prova Social — Google Reviews
+         ══════════════════════════════════════════ -->
+    <section class="protocol" id="depoimentos" aria-label="Depoimentos de clientes">
+      <div class="protocol__header container">
+        <p class="section-label">Prova Social</p>
+        <h2 style="font-family:var(--font-drama);font-style:italic;font-size:clamp(1.8rem,3.5vw,3rem);font-weight:700;color:var(--color-on-surface);line-height:1.15;">
+          5,0 estrelas.<br>33 experiências validadas.
+        </h2>
+      </div>
+
+      <div class="protocol__wrapper">
+        <div class="protocol__sticky">
+          <div class="protocol__stack">
+
+            <!-- CARD 1 — "Sabor impecável" — Canvas: Concentric Circles -->
+            <article class="protocol-card" aria-label="Depoimento: Sabor impecável">
+              <div class="protocol-card__visual">
+                <canvas id="canvas-concentric" aria-hidden="true"></canvas>
+              </div>
+              <div class="protocol-card__content">
+                <div class="protocol-card__stars" aria-label="5 estrelas">★★★★★</div>
+                <blockquote class="protocol-card__quote">
+                  "Sabor impecável. Cada detalhe pensado para surpreender."
+                </blockquote>
+                <div class="protocol-card__meta">
+                  <span class="protocol-card__reviewer">Mariana R.</span>
+                  <span class="protocol-card__event">Casamento — Vila Velha, ES</span>
+                </div>
+              </div>
+              <span class="protocol-card__number">01 / 03</span>
+            </article>
+
+            <!-- CARD 2 — "Pontualidade" — Canvas: Laser Scan -->
+            <article class="protocol-card" aria-label="Depoimento: Pontualidade">
+              <div class="protocol-card__visual">
+                <canvas id="canvas-laser" aria-hidden="true"></canvas>
+              </div>
+              <div class="protocol-card__content">
+                <div class="protocol-card__stars" aria-label="5 estrelas">★★★★★</div>
+                <blockquote class="protocol-card__quote">
+                  "Pontualidade e profissionalismo do início ao fim. Equipe extraordinária."
+                </blockquote>
+                <div class="protocol-card__meta">
+                  <span class="protocol-card__reviewer">Ricardo & Camila T.</span>
+                  <span class="protocol-card__event">Casamento Premium — Vitória, ES</span>
+                </div>
+              </div>
+              <span class="protocol-card__number">02 / 03</span>
+            </article>
+
+            <!-- CARD 3 — "Experiência memorável" — SVG ECG -->
+            <article class="protocol-card" aria-label="Depoimento: Experiência memorável">
+              <div class="protocol-card__visual" style="display:flex;align-items:center;justify-content:center;padding:2rem;">
+                <svg class="ecg-svg" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path class="ecg-path" d="M0,60 L40,60 L50,68 L60,20 L70,115 L80,40 L90,60 L140,60 L150,66 L160,28 L170,105 L180,44 L190,60 L240,60 L250,68 L260,20 L270,115 L280,40 L290,60 L340,60 L350,66 L360,28 L370,105 L380,44 L390,60 L400,60"/>
+                </svg>
+              </div>
+              <div class="protocol-card__content">
+                <div class="protocol-card__stars" aria-label="5 estrelas">★★★★★</div>
+                <blockquote class="protocol-card__quote">
+                  "Uma experiência memorável. Os convidados não paravam de elogiar."
+                </blockquote>
+                <div class="protocol-card__meta">
+                  <span class="protocol-card__reviewer">Fernanda O.</span>
+                  <span class="protocol-card__event">Evento Corporativo — Miss Universo ES</span>
+                </div>
+              </div>
+              <span class="protocol-card__number">03 / 03</span>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         FAQ OPERACIONAL
+         ══════════════════════════════════════════ -->
+    <section class="faq" id="faq" aria-label="Perguntas frequentes">
+      <div class="container">
+        <p class="section-label">FAQ</p>
+        <h2 style="font-family:var(--font-drama);font-style:italic;font-size:clamp(1.8rem,3.5vw,3rem);font-weight:700;color:var(--color-on-surface);margin-bottom:var(--space-xl);line-height:1.15;">
+          Perguntas que<br>quebram objeções.
+        </h2>
+
+        <div class="faq__grid">
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              Vocês fornecem a louça e os utensílios?
+              <span class="faq__icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
+              </span>
+            </button>
+            <div class="faq__answer" aria-hidden="true">
+              <div class="faq__answer-inner">
+                Sim. Todo o enxoval — louças, talheres, copos e utensílios de serviço — é incluso na proposta, mantendo o padrão visual do evento.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              Atendem fora de Vila Velha?
+              <span class="faq__icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
+              </span>
+            </button>
+            <div class="faq__answer" aria-hidden="true">
+              <div class="faq__answer-inner">
+                Sim, atendemos toda a Grande Vitória e municípios adjacentes. Para eventos fora da região, consulte nossa equipe para avaliação logística.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              Qual o número mínimo de convidados?
+              <span class="faq__icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
+              </span>
+            </button>
+            <div class="faq__answer" aria-hidden="true">
+              <div class="faq__answer-inner">
+                A partir de 50 pessoas para eventos com estrutura completa. Para mentorias culinárias e experiências íntimas, consulte disponibilidade.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              O cardápio é personalizado?
+              <span class="faq__icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
+              </span>
+            </button>
+            <div class="faq__answer" aria-hidden="true">
+              <div class="faq__answer-inner">
+                Sim. Cada proposta gastronômica é desenvolvida diretamente com a Chef Aline, considerando o perfil do evento, a estética desejada e as preferências dos anfitriões.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item" style="grid-column:1/-1;">
+            <button class="faq__question" aria-expanded="false">
+              Como funciona o pagamento e contratação?
+              <span class="faq__icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
+              </span>
+            </button>
+            <div class="faq__answer" aria-hidden="true">
+              <div class="faq__answer-inner">
+                Após a aprovação da proposta, solicitamos um sinal para reserva de data. O saldo é quitado conforme as condições definidas no contrato. Nossa equipe acompanha todo o processo até o dia do evento.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         F. FORMULÁRIO — Qualificação + Budget Gate
+         ══════════════════════════════════════════ -->
+    <section class="form-section" id="agendar" aria-label="Verificar disponibilidade de data">
+      <div class="container">
+        <div class="form-section__inner">
+
+          <!-- Copy -->
+          <div class="form-section__copy">
+            <p class="section-label">Verificar Disponibilidade</p>
+            <h2 class="form-section__title">
+              Sua data está<br><em style="color:var(--color-primary);">disponível?</em>
+            </h2>
+            <p class="form-section__desc">
+              Preencha as informações abaixo para verificar a disponibilidade de agenda da Chef Aline.
+              Nossa equipe avalia o perfil do evento e retorna com uma proposta personalizada.
+            </p>
+            <div style="margin-top:2rem;">
+              <p style="font-family:var(--font-data);font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--color-primary);margin-bottom:0.75rem;">Resposta em até</p>
+              <p style="font-family:var(--font-drama);font-style:italic;font-size:2.2rem;font-weight:700;color:var(--color-on-surface);line-height:1;">24 horas.</p>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div>
+            <form id="qualification-form" novalidate aria-label="Formulário de qualificação">
+              <div class="form__grid">
+
+                <!-- Nome -->
+                <div class="form__field form__field--full">
+                  <label class="form__label" for="nome_lead">Nome do Responsável</label>
+                  <input
+                    type="text"
+                    id="nome_lead"
+                    name="nome_lead"
+                    class="form__input"
+                    placeholder="Seu nome completo"
+                    required
+                    autocomplete="name"
+                  >
+                </div>
+
+                <!-- Tipo de Evento -->
+                <div class="form__field">
+                  <label class="form__label" for="tipo_evento">Tipo de Evento</label>
+                  <select id="tipo_evento" name="tipo_evento" class="form__select" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="casamento">Casamento</option>
+                    <option value="corporativo">Corporativo / Gala</option>
+                    <option value="aniversario">Aniversário</option>
+                    <option value="mentoria">Mentoria Culinária</option>
+                    <option value="outro">Outro</option>
+                  </select>
+                </div>
+
+                <!-- Data -->
+                <div class="form__field">
+                  <label class="form__label" for="data_evento">Data Prevista</label>
+                  <input
+                    type="date"
+                    id="data_evento"
+                    name="data_evento"
+                    class="form__input"
+                    required
+                  >
+                </div>
+
+                <!-- Local -->
+                <div class="form__field">
+                  <label class="form__label" for="local_evento">Local do Evento</label>
+                  <input
+                    type="text"
+                    id="local_evento"
+                    name="local_evento"
+                    class="form__input"
+                    placeholder="Cidade / Bairro"
+                    required
+                  >
+                </div>
+
+                <!-- Convidados -->
+                <div class="form__field">
+                  <label class="form__label" for="convidados">Nº de Convidados</label>
+                  <input
+                    type="number"
+                    id="convidados"
+                    name="convidados"
+                    class="form__input"
+                    placeholder="Ex: 150"
+                    min="1"
+                    required
+                  >
+                </div>
+
+                <!-- Telefone -->
+                <div class="form__field form__field--full">
+                  <label class="form__label" for="telefone">WhatsApp</label>
+                  <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    class="form__input"
+                    placeholder="(27) 99999-0000"
+                    required
+                    autocomplete="tel"
+                  >
+                </div>
+
+                <!-- BUDGET GATE — Trava Financeira -->
+                <div class="budget-gate form__field--full">
+                  <p class="budget-gate__title">✦ Alinhamento de Investimento</p>
+                  <p class="budget-gate__question">
+                    Nossas experiências gastronômicas partem de um investimento base de
+                    <strong style="color:var(--color-primary);">R$ 250,00 por pessoa</strong>.
+                    Esse patamar está alinhado ao investimento previsto para o seu evento?
+                  </p>
+                  <div class="budget-gate__options">
+                    <input type="radio" id="budget-sim" name="aceitou_budget" value="sim" class="budget-radio" required>
+                    <label for="budget-sim" class="budget-label">
+                      ✓ Sim, está alinhado
+                    </label>
+                    <input type="radio" id="budget-nao" name="aceitou_budget" value="nao" class="budget-radio">
+                    <label for="budget-nao" class="budget-label">
+                      Não, busco algo menor
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Submit -->
+                <div class="form__submit-area form__field--full">
+                  <button type="submit" class="btn btn--primary btn--lg form__submit-btn">
+                    <span>Verificar Disponibilidade</span>
+                    <span class="btn__arrow">→</span>
+                  </button>
+                </div>
+
+              </div><!-- /.form__grid -->
+
+              <!-- Success Message -->
+              <div class="form__message form__message--success" role="alert" aria-live="polite">
+                <strong>Ficha recebida com sucesso.</strong><br>
+                A Chef Aline avaliará seu evento e enviará a proposta em breve. Fique atento ao seu WhatsApp.
+                <!-- TODO: substituir pelo número real da Chef -->
+                <br><br>
+                <a href="https://wa.me/5527999999999" target="_blank" rel="noopener noreferrer" class="btn btn--secondary" style="display:inline-flex;margin-top:0.5rem;">
+                  Falar agora no WhatsApp →
+                </a>
+              </div>
+
+              <!-- Discard Message -->
+              <div class="form__message form__message--discard" role="alert" aria-live="polite">
+                <strong>Agradecemos o contato e a sinceridade.</strong><br>
+                No momento, nossa estrutura técnica não permite absorver eventos abaixo desse ticket
+                sem comprometer o padrão Le Cordon Bleu. Desejamos muito sucesso no seu evento.
+              </div>
+
+              <!-- Error Message -->
+              <div class="form__message form__message--error" role="alert" aria-live="polite">
+                Ocorreu um erro ao enviar sua ficha. Por favor, tente novamente ou entre em contato
+                diretamente via WhatsApp.
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════
+       G. FOOTER
+       ══════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Brand -->
+        <div>
+          <p class="footer__logo">Aline de Castro Buffet</p>
+          <p class="footer__tagline">
+            Alta Gastronomia com padrão Le Cordon Bleu SP.<br>
+            Casamentos, eventos corporativos e experiências culinárias premium<br>
+            em Vila Velha e Grande Vitória, ES.
+          </p>
+          <!-- TODO: substituir pelo número real da Chef -->
+          <a href="https://wa.me/5527999999999" target="_blank" rel="noopener noreferrer" class="footer__whatsapp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+            Falar com a Chef
+          </a>
+        </div>
+
+        <!-- Nav -->
+        <nav aria-label="Links de navegação do rodapé">
+          <p class="footer__heading">Navegação</p>
+          <ul class="footer__nav">
+            <li><a href="#servicos" class="footer__nav-link">Serviços</a></li>
+            <li><a href="#sobre" class="footer__nav-link">A Chef</a></li>
+            <li><a href="#depoimentos" class="footer__nav-link">Depoimentos</a></li>
+            <li><a href="#faq" class="footer__nav-link">FAQ</a></li>
+            <li><a href="#agendar" class="footer__nav-link">Verificar Disponibilidade</a></li>
+          </ul>
+        </nav>
+
+        <!-- Contact + Status -->
+        <div>
+          <p class="footer__heading">Atendimento</p>
+          <div class="status-indicator">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span class="status-label">Sistema Operacional</span>
+          </div>
+          <address style="font-style:normal;">
+            <p style="font-size:0.82rem;color:var(--color-on-surface-dim);line-height:1.8;">
+              Rua São Paulo, 3009<br>
+              Vila Velha, ES<br>
+              <!-- TODO: adicionar email e telefone reais -->
+            </p>
+          </address>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer__bottom">
+        <p class="footer__copy">
+          &copy; <span id="current-year"></span> Aline de Castro Buffet. Todos os direitos reservados.
+        </p>
+        <div class="footer__legal">
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Termos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── JS — Order: components → animations → main ── -->
+  <script src="./assets/js/components.js"></script>
+  <script src="./assets/js/animations.js"></script>
+  <script src="./assets/js/main.js"></script>
+
+  <!-- Inline: current year for footer -->
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

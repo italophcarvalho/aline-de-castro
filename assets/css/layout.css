@@ -1,0 +1,271 @@
+/* ============================================================
+   LAYOUT.CSS — Grid, Containers, Sections
+   ============================================================ */
+
+/* ── CONTAINER ── */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-pad);
+}
+
+.container--wide {
+  max-width: 1440px;
+}
+
+.container--narrow {
+  max-width: 800px;
+}
+
+/* ── SECTION BASE ── */
+section {
+  position: relative;
+  width: 100%;
+}
+
+/* ── A. NAVBAR LAYOUT ── */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-navbar);
+  height: var(--navbar-height);
+  display: flex;
+  align-items: center;
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-inline: var(--container-pad);
+}
+
+/* ── B. HERO LAYOUT ── */
+.hero {
+  position: relative;
+  height: 100dvh;
+  min-height: 600px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=90&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  will-change: transform;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    var(--color-dark) 0%,
+    rgba(14, 14, 14, 0.55) 40%,
+    rgba(14, 14, 14, 0.1) 100%
+  );
+}
+
+.hero__content {
+  position: relative;
+  z-index: var(--z-base);
+  padding-inline: var(--container-pad);
+  padding-bottom: var(--space-xl);
+  max-width: 900px;
+}
+
+/* ── C. FEATURES LAYOUT ── */
+.features {
+  padding-block: var(--space-xl);
+  background: var(--color-background);
+}
+
+.features__header {
+  margin-bottom: var(--space-lg);
+}
+
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  align-items: start;
+}
+
+/* ── D. MANIFESTO LAYOUT ── */
+.manifesto {
+  padding-block: var(--space-2xl);
+  background: var(--color-dark);
+  overflow: hidden;
+}
+
+.manifesto__bg-texture {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?w=1920&q=60&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+.manifesto__content {
+  position: relative;
+  z-index: var(--z-base);
+  max-width: 900px;
+}
+
+.manifesto__chef {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+  margin-top: var(--space-xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--ghost-border);
+}
+
+/* ── E. PROTOCOL (STICKY STACK) LAYOUT ── */
+.protocol {
+  background: var(--color-background);
+}
+
+.protocol__header {
+  padding-block: var(--space-lg);
+  padding-inline: var(--container-pad);
+  border-bottom: 1px solid var(--ghost-border-white);
+}
+
+.protocol__wrapper {
+  position: relative;
+  height: 300vh;
+}
+
+.protocol__sticky {
+  position: sticky;
+  top: var(--navbar-height);
+  height: calc(100vh - var(--navbar-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.protocol__stack {
+  position: relative;
+  width: 100%;
+  max-width: 860px;
+  height: 520px;
+  margin-inline: auto;
+  padding-inline: var(--container-pad);
+}
+
+.protocol-card {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  background: var(--color-surface);
+  overflow: hidden;
+  will-change: transform, filter, opacity;
+}
+
+/* ── FAQ LAYOUT ── */
+.faq {
+  padding-block: var(--space-xl);
+  background: var(--color-background);
+  border-top: 1px solid var(--ghost-border-white);
+}
+
+.faq__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.faq__item {
+  border-bottom: 1px solid var(--ghost-border-white);
+  padding-block: var(--space-md);
+}
+
+/* ── F. FORM LAYOUT ── */
+.form-section {
+  padding-block: var(--space-xl);
+  background: var(--color-dark);
+}
+
+.form-section__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+.form-section__copy {
+  padding-top: var(--space-md);
+}
+
+.form__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md) var(--space-lg);
+}
+
+.form__field--full {
+  grid-column: 1 / -1;
+}
+
+/* ── G. FOOTER LAYOUT ── */
+.footer {
+  background: var(--color-dark);
+  padding-block: var(--space-xl) var(--space-lg);
+  border-top: 1px solid var(--ghost-border);
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-xl);
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--ghost-border-white);
+}
+
+/* ── SECTION LABEL ── */
+.section-label {
+  font-family: var(--font-data);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.section-label::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 1px;
+  background: var(--color-primary);
+}
