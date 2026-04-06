@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aline de Castro Buffet | Alta Gastronomia & Padrão Le Cordon Bleu</title>
+  <meta name="description" content="Experiências gastronômicas premium para casamentos e eventos corporativos. O rigor do Le Cordon Bleu aliado à hospitalidade inesquecível.">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- CSS (Ordem Estrutural) -->
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="logo font-title">ALINE DE CASTRO<br><span class="logo-sub">BUFFET</span></div>
+      <div class="nav-links">
+        <a href="#services" class="nav-link">Experiências</a>
+        <a href="#agendar" class="btn btn-ghost magnetic">Verificar Disponibilidade</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content container">
+      <h1 class="hero-title">
+        <span class="hero-line font-title bold">Excellence in</span><br>
+        <span class="hero-line font-drama italic gold-text">Gastronomy.</span>
+      </h1>
+      <p class="hero-subtitle font-title">The Le Cordon Bleu Standard</p>
+      <a href="#agendar" class="btn btn-primary magnetic hero-cta">Reservar Data</a>
+    </div>
+  </header>
+
+  <!-- Features (Artefatos Interativos) -->
+  <section id="services" class="features section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title font-drama italic">Portfólio de Assinatura</h2>
+        <p class="section-desc font-title">O rigor clássico servido com maestria.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Card 1: Embaralhador -->
+        <div class="feature-card interactive-card">
+          <div class="card-content">
+            <h3 class="font-title bold card-title">Premium Weddings</h3>
+            <div class="shuffle-container" id="shuffle-weddings">
+              <div class="shuffle-item">Ilhas Gastronômicas Exclusivas</div>
+              <div class="shuffle-item">Empratados de Alta Costura</div>
+              <div class="shuffle-item">Menu Degustação Personalizado</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Máquina de Escrever -->
+        <div class="feature-card interactive-card">
+          <div class="card-content">
+            <h3 class="font-title bold card-title">Corporate Gala</h3>
+            <div class="typewriter-container font-data" id="typewriter-corporate"></div>
+          </div>
+        </div>
+
+        <!-- Card 3: Agendador Protocolo -->
+        <div class="feature-card interactive-card">
+          <div class="card-content">
+            <h3 class="font-title bold card-title">High-End Boteco</h3>
+            <div class="scheduler-container" id="scheduler-boteco">
+              <div class="scheduler-grid"></div>
+              <div class="cursor-svg"></div>
+              <p class="font-data accent-text mt-sm">Executando Degustação...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filosofia (Manifesto) -->
+  <section class="manifesto section-padding dark-void">
+    <div class="container">
+      <p class="manifesto-common font-title">A maioria dos buffets foca em: entregar comida em grande volume.</p>
+      <p class="manifesto-bold font-drama italic">
+        Nós focamos em: <em class="accent-text manifesto-word-wrap">uma experiência artística, validada pelo padrão Le Cordon Bleu.</em>
+      </p>
+    </div>
+  </section>
+
+  <!-- Protocolo (Reviews Sticky) -->
+  <section class="protocol-wrapper section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title font-drama italic">O Veredito</h2>
+        <p class="section-desc font-title">5.0/5.0 em excelência comprovada.</p>
+      </div>
+
+      <div class="protocol-stack">
+        <div class="protocol-card surface-elevated">
+          <p class="review-text font-drama italic">"Sabor impecável e uma execução que parou o evento. A Chef Aline trouxe a França para o nosso casamento."</p>
+          <p class="review-author font-data">M. & J. — Casamento Premium</p>
+        </div>
+        <div class="protocol-card surface-elevated">
+          <p class="review-text font-drama italic">"A pontualidade e o profissionalismo da equipe foram fora de série. Nossos diretores ficaram impressionados."</p>
+          <p class="review-author font-data">RH Corporativo — Evento de Gala</p>
+        </div>
+        <div class="protocol-card surface-elevated">
+          <p class="review-text font-drama italic">"Experiência memorável. O Boteco High-End ressignificou o que entendíamos sobre comida de conforto."</p>
+          <p class="review-author font-data">V. S. — Aniversário Exclusivo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulário de Agendamento -->
+  <section id="agendar" class="booking section-padding">
+    <div class="container booking-container surface-elevated">
+      <div class="booking-header">
+        <h2 class="font-drama italic section-title">Reservar Degustação</h2>
+        <p class="font-title">Insira os dados da sua ficha técnica.</p>
+      </div>
+      
+      <form id="booking-form" class="form-grid">
+        <div class="input-group">
+          <input type="text" id="nome_lead" name="nome_lead" required placeholder=" ">
+          <label for="nome_lead" class="font-data">Nome do Responsável</label>
+        </div>
+        
+        <div class="input-group">
+          <select id="tipo_evento" name="tipo_evento" required>
+            <option value="" disabled selected>Selecione...</option>
+            <option value="Casamento">Casamento</option>
+            <option value="Corporativo">Corporativo / Gala</option>
+            <option value="Boteco">High-End Boteco</option>
+            <option value="Outro">Outro</option>
+          </select>
+          <label for="tipo_evento" class="font-data">Tipo de Evento</label>
+        </div>
+
+        <div class="input-group">
+          <input type="date" id="data_evento" name="data_evento" required placeholder=" ">
+          <label for="data_evento" class="font-data active-label">Data Prevista</label>
+        </div>
+
+        <div class="input-group">
+          <input type="text" id="local_evento" name="local_evento" required placeholder=" ">
+          <label for="local_evento" class="font-data">Local (Cidade/Bairro)</label>
+        </div>
+
+        <div class="input-group">
+          <input type="number" id="convidados" name="convidados" required placeholder=" " min="1">
+          <label for="convidados" class="font-data">Número de Convidados</label>
+        </div>
+
+        <div class="input-group full-width budget-group">
+          <p class="font-data form-disclaimer">Nossas experiências partem de R$ 250,00 por pessoa. Está alinhado ao seu orçamento?</p>
+          <div class="radio-wrapper">
+            <label class="radio-label font-title">
+              <input type="radio" name="aceitou_budget" value="true" required>
+              <span class="radio-custom"></span> Sim, está alinhado.
+            </label>
+            <label class="radio-label font-title">
+              <input type="radio" name="aceitou_budget" value="false" required>
+              <span class="radio-custom"></span> Não, busco algo menor.
+            </label>
+          </div>
+        </div>
+
+        <div class="form-feedback full-width" id="form-feedback"></div>
+
+        <div class="input-group full-width">
+          <button type="submit" class="btn btn-primary magnetic w-full" id="submit-btn">Solicitar Proposta</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer surface-lowest">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3 class="font-title bold">Aline de Castro</h3>
+        <p class="font-drama italic gold-text">Le Cordon Bleu Standard</p>
+      </div>
+      <div class="footer-status">
+        <span class="status-dot"></span>
+        <span class="status-label font-data">Sistema Operacional • Triagem Ativa</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
